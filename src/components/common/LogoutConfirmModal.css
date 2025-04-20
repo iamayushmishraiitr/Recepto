@@ -1,0 +1,62 @@
+/* Reusing modal-overlay, modal-content, modal-actions from AssignModal.css */
+/* Import AssignModal.css or copy relevant styles if not using global import */
+/* For simplicity, let's copy the essential base styles */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it's below login overlay if needed, but above content */
+}
+
+.modal-content {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* Specific styles for Logout Confirm Modal */
+.logout-confirm-modal {
+  max-width: 350px; /* Smaller width for confirmation */
+  text-align: center; /* Center text */
+}
+
+.logout-confirm-modal h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.logout-confirm-modal p {
+  margin-bottom: 24px; /* Increased spacing */
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.logout-confirm-modal .modal-actions {
+    justify-content: center; /* Center buttons */
+}
+
+/* Add danger button style if not already global */
+.btn-danger {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #cc0044; /* Darker red */
+} 

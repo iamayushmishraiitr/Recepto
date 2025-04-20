@@ -1,0 +1,45 @@
+.leads-page {
+  padding: 16px;
+}
+
+.leads-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.filters-button-container {
+  position: relative;
+}
+
+.filters-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+}
+
+.filters-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.leads-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.no-leads-message {
+    padding: 20px;
+    text-align: center;
+    color: var(--dark-gray);
+} 

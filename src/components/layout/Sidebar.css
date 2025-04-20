@@ -1,0 +1,126 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color: var(--white);
+  border-right: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar.collapsed {
+  width: 72px;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-logo img {
+  width: 32px;
+  height: 32px;
+}
+
+.sidebar-logo h1 {
+  margin-left: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.sidebar-category {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dark-gray);
+  padding: 16px 16px 8px;
+  text-transform: uppercase;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.sidebar-nav-item:hover {
+  background-color: var(--light-gray);
+}
+
+.sidebar-nav-item.active {
+  background-color: var(--light-gray);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.sidebar-nav-item.active .sidebar-icon {
+  color: var(--primary-color);
+}
+
+.sidebar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  color: var(--dark-gray);
+}
+
+.sidebar-nav-item span {
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 72px;
+  }
+
+  .sidebar.collapsed {
+    width: 72px; /* Already collapsed */
+  }
+
+  .sidebar-logo h1 {
+    display: none; /* Hide text logo */
+  }
+
+  .sidebar-logo {
+    justify-content: center; /* Center icon */
+    padding: 16px 0;
+  }
+  
+  .sidebar-category {
+     text-align: center;
+     padding: 16px 0 8px;
+  }
+  
+  .sidebar-nav-item {
+    justify-content: center; /* Center icon */
+    padding: 12px 0;
+  }
+
+  .sidebar-nav-item span {
+    display: none; /* Hide text labels */
+  }
+  
+  .sidebar-icon {
+     margin-right: 0;
+  }
+  
+  .logout-button {
+      cursor: pointer;
+  }
+}
