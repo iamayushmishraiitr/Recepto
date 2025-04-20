@@ -61,7 +61,7 @@ const initialMockUsers: User[] = [
   {
     id: "u1",
     name: "Anand Kumar",
-    avatar: "https://source.unsplash.com/random/40x40/?portrait&sig=1",
+    avatar: "https://media.istockphoto.com/id/1361217779/photo/portrait-of-happy-teenage-boy-at-park.jpg?s=612x612&w=0&k=20&c=yGHZLPu6UWwoj2wazbbepxmjl29MS1Hr2jV3N0FzjyI=",
     role: "Admin",
     lastActive: "Now",
     generated: 12,
@@ -71,7 +71,7 @@ const initialMockUsers: User[] = [
   {
     id: "u2",
     name: "Olivia Rhye",
-    avatar: "https://source.unsplash.com/random/40x40/?portrait&sig=2",
+    avatar: "https://images.pexels.com/photos/1408978/pexels-photo-1408978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     role: "Member",
     lastActive: "2 min ago",
     generated: 123,
@@ -80,8 +80,8 @@ const initialMockUsers: User[] = [
   },
   {
     id: "u3",
-    name: "Phoenix Baker",
-    avatar: "https://source.unsplash.com/random/40x40/?portrait&sig=3",
+    name: "Ayush Mishra",
+    avatar: "https://images.pexels.com/photos/1408978/pexels-photo-1408978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     role: "Member",
     lastActive: "1 hr ago",
     generated: 56,
@@ -90,8 +90,8 @@ const initialMockUsers: User[] = [
   },
   {
     id: "u4",
-    name: "Lana Steiner",
-    avatar: "https://source.unsplash.com/random/40x40/?portrait&sig=4",
+    name: "Lana",
+    avatar: "https://images.pexels.com/photos/1408978/pexels-photo-1408978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     role: "Removed",
     lastActive: "Yesterday",
     generated: 23,
